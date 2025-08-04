@@ -4,3 +4,8 @@ if a > b:
     print(f"{a} is greater than {b}")           
 else:
     print(f"{b} is greater than or equal to {a}")
+c=int(input("Enter a third number: "))
+if c > a and c > b:
+    print(f"{c} is the greatest of the three numbers")          
+elif c < a and c < b:
+    print(f"{c} is the smallest of the three numbers")
