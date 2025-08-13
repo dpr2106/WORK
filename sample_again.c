@@ -5,9 +5,9 @@ int main()
 { 
 
 
-int no_of_apples = 0;;
+int no_of_apples = 0;
 float quantity = 0.0f;
-char name[39] = "";;
+char name[39] = "";
 char quality = '\0';
 
 printf("Enter the number of apples you bought: ");
