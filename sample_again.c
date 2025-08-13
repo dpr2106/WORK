@@ -3,12 +3,30 @@ int main()
 // This program is my first program! :)
 /*Yeah I am a beginner type of programmer and very new to C Programming Languaage*/
 { 
-printf("India is my country\n");
-printf("I am from Telanagana!\n");
-int age =18;
-int year=2025;
-printf("I am %d years old in the year %d\n", year);
-printf("My age is currently %d" , age);
+
+
+int no_of_apples = 0;;
+float quantity = 0.0f;
+char name[39] = "";;
+char quality = '\0';
+
+printf("Enter the number of apples you bought: ");
+scanf("%d" , &no_of_apples);
+
+
+printf("%d\n" , no_of_apples);
+printf("%f\n" , quantity);
+printf("%c\n" , name);
+printf("%s\n" , quality);
+
+
+
+
+
+
+
+
+
 
 
 return 0;
