@@ -9,7 +9,7 @@ int no_of_apples = 0;
 float quantity = 0.0f;
 char name[39] = "";
 char quality = '\0';
-
+printf("India is my country and i love it the most !\n");
 printf("Enter the number of apples you bought: ");
 scanf("%d" , &no_of_apples);
 
