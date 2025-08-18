@@ -21,6 +21,7 @@ int main()
     printf("Name of the Buyer: %s\n", name);
 
     printf("India is my country !");
+    printf("India is my country another line lol !");
 
     
 
