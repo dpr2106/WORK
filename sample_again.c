@@ -20,5 +20,7 @@ int main()
     scanf("%s", name);
     printf("Name of the Buyer: %s\n", name);
 
+    printf("India is my country !");
+
     return 0;
 }
