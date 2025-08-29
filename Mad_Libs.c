@@ -11,7 +11,7 @@ char adjective2[20] = "";
 
 printf("Enter an adjective : (descriptive word) ");
 scanf("%s" , &adjective);
-printf("%s\n" , adjective);
+
 
 printf("Enter a noun : (person, place or thing) ");
 scanf("%s" , &noun);
@@ -26,7 +26,10 @@ printf("Enter an adjective :");
 scanf("%s" , &adjective2);
 
 
-printf("\nToday  was feeling very %s \n" , adjective);
+printf("\nToday %s was feeling very %s " , noun , adjective);
+printf("\nAnd suddenly %s appeared to be %s and that's it ! \n" , noun , adjective1);
+printf("Then %s started to %s \n" , noun , verb);
+
 
 
 
