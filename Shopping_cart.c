@@ -7,14 +7,17 @@ int quantity = 0;
 int currency = 0;
 float total = 0.0f;
 
+printf("                      RAJU MITHAI BANDHAR                            \n");
 
-printf("What item would you like to buy from our supermarket : ");
+
+
+printf("What mithai would you like to buy from our supermarket : ");
 scanf("%s" , &item);
    
-printf("What is the price of one item ? (tell me real price hehe) $");
+printf("What is the price of one item ?  $   \n");
 scanf("%f" , &price);
  
-printf("How many items would you like to buy of that type ?");
+printf("How many items would you like to buy of that type ?\n");
 scanf("%d" , &quantity);
 
 total = price * quantity;
