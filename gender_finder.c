@@ -12,6 +12,6 @@ while (strcmp(a, "male") == 0 || strcmp(a, "female") == 0 ||
     scanf("%s", a);
 }
 printf("Enter a valid gender :\n");
-scanf("%s", a);
+scanf("%s", &a);
     return 0;
 }
