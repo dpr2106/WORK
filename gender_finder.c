@@ -3,6 +3,7 @@
 int main() {
 
 char a[10];
+while(1) {
 printf("Enter a gender :");
 scanf("%s", a);
 while (strcmp(a, "male") == 0 || strcmp(a, "female") == 0 ||
@@ -11,7 +12,7 @@ while (strcmp(a, "male") == 0 || strcmp(a, "female") == 0 ||
     printf("Again tell me ur gender :");
     scanf("%s", a);
 }
-printf("Enter a valid gender :\n");
-scanf("%s", &a);
+    printf("Fucking enter a valid gender !\n");
+}
     return 0;
 }
