@@ -1,8 +1,6 @@
 #include <stdio.h>
 int main (){
 
-
-
 int choice;
 int amount;
 int balance = 10000;
@@ -29,7 +27,7 @@ scanf("%d" , &choice);
 switch (choice) {
     case 1:
         int amount;
-        printf("Enter the amount you want to withdraw: \n");
+        printf("Enter the amount you want to withdraw:");
         scanf("%d" , &amount);
         if (amount >= balance || amount < 0) {
             printf("Invalid amount !");
@@ -80,18 +78,3 @@ switch (choice) {
         
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
