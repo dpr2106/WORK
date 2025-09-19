@@ -1,11 +1,9 @@
 #include <stdio.h>
 int main() {
 
-int price = 25;
-int *p = &price;
-int quantity = 5;
-int *q = &quantity;
-printf("The location of this variable is %p and the location of the second variable is %p\n" , p , q);
-
-    return 0;
+int x[5] = {1,2,3,4,5};
+int *p;
+p=x;
+printf("Address of x: %p\n",x);
+return 0;
 }
