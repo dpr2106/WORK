@@ -11,10 +11,9 @@ lst = np.array(list)
 index_series = pd.Series(list,index=range(1,n+1))
 print(index_series)
 a=input("Now enter the name of the book u wanna search in the library to locate where it is : ")
-while True:
-    for i in range(len(list)):
-        if list[i] == a:
-            print("Book found at desk {}".format(i+1))
-            break
-        else:
-            print("Book not found in the library.")
+for i in range(len(list)):
+   if list[i] == a:
+    print("Book found at desk {}".format(i+1))
+    break
+else:
+     print("Book not found in the library.")
