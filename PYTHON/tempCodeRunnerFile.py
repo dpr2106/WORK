@@ -97,19 +97,15 @@ class RMS:
                               font=("goudy old style",20),bd=10,relief=RIDGE,bg="#038074",fg="white")
         self.lbl_result.place(x=1020,y=530,width=300,height=100)
 
-        self.footer=Label(self.root,
-                    text="SRMS - Student Result Management System\n Contact us for any technical issue : +91987xxxxx01",
-                    font=("goudy old style",15),
-                    bg="black",
-                    fg="white")
-        self.footer.place(relx=0, rely=1, anchor="sw", relwidth=1, height=40)
-        self.footer.lift()
-
     def add_course(self):
         self.new_win=Toplevel(self.root)
         self.new_obj=CourseClass(self.new_win)
 
-   
+        footer=Label(self.root,
+                    text="SRMS - Student Result Management System\n Contact us for any technical issue : +91987xxxxx01",
+                    font=("goudy old style",15),
+                    bg="black",
+                    fg="white").pack(side=BOTTOM,fill=X)
 if __name__ == "__main__":
     root=Tk()
     obj=RMS(root)

@@ -129,7 +129,29 @@ class CourseClass:
         self.C_Frame=Frame(self.root,bd=2,relief=RIDGE)
         self.C_Frame.place(x=720,y=100,width=470,height=340)
 
-        self.CourseTable=TreeView
+        scrolly=Scrollbar(self.C_Frame,orient=VERTICAL)
+        scrollx=Scrollbar(self.C_Frame,orient=HORIZONTAL)
+
+        self.CourseTable=ttk.Treeview(self.C_Frame,
+                                  columns=("cid","name","duration","charges","description"),
+                                  xscrollcommand=scrollx.set,
+                                  yscrollcommand=scrolly.set)
+        scrollx.pack(side=BOTTOM,fill=X)
+        scrolly.pack(side=RIGHT,fill=Y)
+        scrollx.config(command=self.CourseTable.xview)
+        scrolly.config(command=self.CourseTable.yview)
+        self.CourseTable.heading("cid",text="Course ID")
+        self.CourseTable.heading("name",text="Name")    
+        self.CourseTable.heading("duration",text="Duration")
+        self.CourseTable.heading("charges",text="Charges")
+        self.CourseTable.heading("description",text="Description")
+        self.CourseTable["show"]="headings"
+        self.CourseTable.column("cid",width=100)
+        self.CourseTable.column("name",width=100)    
+        self.CourseTable.column("duration",width=100)
+        self.CourseTable.column("charges",width=100)
+        self.CourseTable.column("description",width=150)
+        self.CourseTable.pack(fill=BOTH,expand=1)
 
 if __name__ == "__main__":
     root=Tk()
